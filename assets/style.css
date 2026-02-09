@@ -96,11 +96,13 @@ body {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	z-index: 1000;
+  	position: relative;
 }
 .gallery .nav {
 	justify-content: center;
 }
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link, .nav-link.active-tag {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
