@@ -87,7 +87,6 @@ body {
 }
 #about-me p {
 	width: 80%;
-	font-size: 14px;
 }
 
 #gallery {
@@ -103,7 +102,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link, .nav-link.active-tag {
-	color: #fff;
+	color: #2B2B2B;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -193,6 +192,10 @@ body {
 	z-index: 1;
 }
 
+.h5-title {
+	font-size: 1.75rem;
+}
+
 #contact {
 	margin: auto;
 	background-color: #D8D3A8 ;
@@ -215,8 +218,10 @@ body {
 	z-index: -1;
 }
 .form-container {
+	display: flex;
+	flex-direction: column;
 	flex : 2;
-
+	gap: 30px;
 }
 form {
 	display: flex;
@@ -314,7 +319,7 @@ input[type="submit"] {
 	}
 	.picture.right::before {
 		width: 100%;
-		height: 30%;
+		height: 500px;
 		position: absolute;
 		bottom: 0;
 		right: 0;
@@ -356,4 +361,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
