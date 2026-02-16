@@ -3,20 +3,18 @@
 
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 	<meta charset="UTF-8">
-	<script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<link  rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css" defer>
+	<link  rel="stylesheet" href="./assets/style.css" defer>
+	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+		rel="stylesheet">
+
+	
+	<script async src="./assets/bootstrap/bootstrap.bundle.min.js" ></script>
+	<script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+		 defer integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script  src="./assets/maugallery.min.js" defer></script>
+	<script  src="./assets/scripts.js" defer></script>
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-CN2B20CRNM"></script>
@@ -65,16 +63,22 @@
 
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100"
-							alt="photo d'un homme marchant sur un passage piéton">
+						<img fetchpriority="high" src="./assets/images/slider/ryoji-iwata-1920.webp" 
+						srcset="./assets/images/slider/ryoji-iwata-824.webp 824w,
+     	./assets/images/slider/ryoji-iwata-1920.webp 1920w"
+		sizes="100vw" class="d-block w-100" alt="photo d'un homme marchant sur un passage piéton">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100"
-							alt="photo d'une foule de personnes lors d'un concert">
+						<img src="./assets/images/slider/nicholas-green-1920.webp" 
+						srcset="./assets/images/slider/nicholas-green-824.webp 824w,
+     	./assets/images/slider/nicholas-green-1920.webp 1920w" 
+		sizes="100vw" class="d-block w-100" alt="photo d'une foule de personnes lors d'un concert">
 					</div>
 					<div class="carousel-item">
-						<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-							class="d-block w-100"
+						<img src="./assets/images/slider/edward-cisneros-1920.webp"
+						 srcset="./assets/images/slider/edward-cisneros-824.webp 824w,
+     	./assets/images/slider/edward-cisneros-1920.webp 1920w" 
+		sizes="100vw" class="d-block w-100"
 							alt="Photo d'un couple de mariés entrain de s'embrasser lors de l'ouverture du bal">
 					</div>
 				</div>
@@ -97,17 +101,20 @@
 			</div>
 			<div id="about-me">
 				<h1 class="about-me__title">Photographe professionnelle, pour raconter votre histoire en images</h1>
-				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
+				<p class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y
+					étais
 					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
 					immortels, voilà ce qui me fait vibrer.</p>
-				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
+				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une
+					envie :
 					le
 					figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
 					yeux,
 					ou le partager au plus grand nombre.
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon
 					approche, ma
-					technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de
+					technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur,
+					de
 					la
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
@@ -117,39 +124,54 @@
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-						alt="Photo de concert">
+						src="./assets/images/gallery/concerts/aaron-paul-1920.webp" 
+						srcset="./assets/images/gallery/concerts/aaron-paul-650.webp 725w, 
+						./assets/images/gallery/concerts/aaron-paul-1920.webp 1920w" sizes="100vw" alt="Photo de concert">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
+						src="./assets/images/gallery/entreprise/ali-morshedlou-1920.webp" 
+						srcset="./assets/images/gallery/entreprise/ali-morshedlou-650.webp 725w, 
+						./assets/images/gallery/entreprise/ali-morshedlou-1920.webp 1920w" sizes="100vw"
 						alt="Photo d'un homme en costume cravatte">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
+						src="./assets/images/gallery/entreprise/jason-goodman-1920.webp" 
+						srcset="./assets/images/gallery/entreprise/jason-goodman-650.webp 725w, 
+						./assets/images/gallery/entreprise/jason-goodman-1920.webp 1920w" sizes="100vw"
 						alt="Photo d'une femme qui sourit">
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-						alt="Photo d'un mariage">
+						src="./assets/images/gallery/mariage/hannah-busing-1920.webp" 
+						srcset="./assets/images/gallery/mariage/hannah-busing-650.webp 725w,
+						 ./assets/images/gallery/mariage/hannah-busing-1920.webp 1920w" sizes="100vw" alt="Photo d'un mariage">
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-						alt="Photo de portrait">
+						src="./assets/images/gallery/portraits/ade-tunji-1920.webp" 
+						srcset="./assets/images/gallery/portraits/ade-tunji-650.webp 725w, 
+						./assets/images/gallery/portraits/ade-tunji-1920.webp 1920w" sizes="100vw" alt="Photo de portrait">
 					<img data-gallery-tag="Mariages" class="gallery-item"
-						src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
+						src="./assets/images/gallery/mariage/jakob-owens-1920.webp" 
+						srcset="./assets/images/gallery/mariage/jakob-owens-650.webp 725w,
+						 ./assets/images/gallery/mariage/jakob-owens-1920.webp 1920w" sizes="100vw"
 						alt="Photo d'un couple lors d'un mariage">
 					<img data-gallery-tag="Portrait" class="gallery-item"
-						src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-						alt="Photo d'un portrait">
+						src="./assets/images/gallery/portraits/nino-van-prattenburg-1920.webp" 
+						srcset="./assets/images/gallery/portraits/nino-van-prattenburg-650.webp 725w,
+						 ./assets/images/gallery/portraits/nino-van-prattenburg-1920.webp 1920w" sizes="100vw" alt="Photo d'un portrait">
 					<img data-gallery-tag="Concert" class="gallery-item"
-						src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-						alt="Photo de concert">
+						src="./assets/images/gallery/concerts/austin-neill-1920.webp" 
+						srcset="./assets/images/gallery/concerts/austin-neill-650.webp 725w, 
+						./assets/images/gallery/concerts/austin-neill-1920.webp 1920w" sizes="100vw" alt="Photo de concert">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
-						src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
+						src="./assets/images/gallery/entreprise/mateus-campos-felipe-1920.webp" 
+						srcset="./assets/images/gallery/entreprise/mateus-campos-felipe-650.webp 725w,
+						./assets/images/gallery/entreprise/mateus-campos-felipe-1920.webp 1920w" sizes="100vw"
 						alt="Photo d'une femme qui rigole devant son ordinateur">
 				</div>
 			</div>
 			<div class="quote">
 				<figure>
 					<blockquote>
-						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
-							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
+						<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+							qu’un
+							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion.
+							L’inexactitude
 							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
 							vérité.
 						</p>
@@ -164,11 +186,12 @@
 				<div class="service" tabindex="0">
 					<div class="service__description">
 						<h3>Shooting photo</h3>
-						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
+						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me
+							déplace
 							en
 							Île-de-France pour réaliser vos photos</p>
 					</div>
-					<div class="service__price" >
+					<div class="service__price">
 						<h4>350€/demi journée</h4>
 						<p>Matériel, déplacement inclus</p>
 					</div>
@@ -177,7 +200,8 @@
 				<div class="service" tabindex="0">
 					<div class="service__description">
 						<h3>Retouches</h3>
-						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
+						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un
+							rendu
 							optimal pour vos publications</p>
 					</div>
 					<div class="service__price">
@@ -188,7 +212,8 @@
 				<div class="service" tabindex="0">
 					<div class="service__description">
 						<h3>Album photos</h3>
-						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à
+							travers
 							un
 							album photo personnalisé</p>
 					</div>
@@ -202,7 +227,8 @@
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
+					<p class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression,
+						des
 						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</p>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
@@ -212,14 +238,14 @@
 
 			<div class="container">
 				<div class="form-container">
-					
+
 					<div class="contact-info">
 						<h5 class="h5-title">Une question ? Une demande de devis ?</h5>
 						<p> Vous pouvez me contacter en passant au studio ou par téléphone. </p>
 						<p><strong>Nina Carducci – Photographe</strong></p>
-						<p><i class="fa-solid fa-map-location"></i> 68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
-						<p><i class="fa-solid fa-square-phone"></i> 06 12 34 56 78</p>
-						<p><i class="fa-regular fa-clock"></i> Du lundi au vendredi de 9h – 18h</p>
+						<p>🗺️ 68 avenue Alsace-Lorraine, 33200 Bordeaux</p>
+						<p>📞 06 12 34 56 78</p>
+						<p>🕐 Du lundi au vendredi de 9h – 18h</p>
 					</div>
 
 					<div>
@@ -227,9 +253,9 @@
 						<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 						<form action="contact" method="post">
 							<label for="name">Nom</label>
-							<input type="text" name="nom" id="name">
+							<input type="text" name="nom" id="name" autocomplete="name">
 							<label for="email">Email</label>
-							<input type="email" name="email" id="email">
+							<input type="email" name="email" id="email" autocomplete="email">
 							<label for="message">Message</label>
 							<textarea name="message" id="message" cols="30" rows="10"></textarea>
 							<input type="submit" value="Envoyer">
